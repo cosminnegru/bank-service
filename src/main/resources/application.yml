@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:bankdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+
+user:
+  read:
+    oauth:
+      clientId: user-read-client-id
+      clientSecret: user-read-client-secret
+  write:
+    oauth:
+      clientId: user-write-client-id
+      clientSecret: user-write-client-secret
